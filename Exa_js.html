@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise js</title>
+  </head>
+  <body>
+    <input type="text" id="search">
+    <button type="button" onclick="search();">Search</button>
+    <h3 id="error"></h3>
+    <div class="container">
+      <h2>Basic Table</h2>
+      <p>The .table class adds basic styling (light 
+          padding and only horizontal dividers) 
+          to a table:
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Movie Name</th>
+            <th>Year</th>
+            <th>Actors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="new_rows">
+            <td id="movie-name"></td>
+            <td id="movie-year"></td>
+            <td id="movie-actors"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      const search = () =>  {
+        const word = document.getElementById('search').value;
+        axios({
+          url: 'http://www.omdbapi.com/?t='+ word +'&y=&plot=short&apikey=40e9cece',
+          method: 'post',
+          headers: {'Content-type': 'text/html; charset=UTF-8'},
+          }).then((response) => {
+            if (response.data.Response === "False") { $('#error').append("No hay resultados"); }
+            $('#movie-name').append(response.data.Title);
+            $('#movie-year').append(response.data.Year);
+            $('#movie-actors').append(response.data.Actors);
+
+          }).catch((error) => {
+          console.log("error");
+          }).then(() => {   
+        });
+    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

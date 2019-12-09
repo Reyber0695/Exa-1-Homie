@@ -1,7 +1,7 @@
 def join_words(words, number)
-  points = "." * 10
+  word_size = "." * number
 
-  words.join.split(/(#{points})/).reject(&:empty?)
+  words.join.split(/(#{word_size})/).reject(&:empty?)
 end
 
 words = ['hola', 'este', 'es', 'un', 'nuevo', 'mensaje']

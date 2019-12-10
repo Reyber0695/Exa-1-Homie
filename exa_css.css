@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: auto;
+}
+
+.width {
+  max-width: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  height: 90px;
+}
+
+  header span {
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    color: rgb(74, 74, 74);
+  }  
+
+.container  {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+
+  .container .radio {
+    border: 1px green solid;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+    .container .radio input {
+      border: 1px purple solid;
+    }
+
+    .container .radio label {
+      font-family: 'Open sans', sans-serif;
+      color: rgb(74, 74, 74);
+      font-size: 16px;
+    }

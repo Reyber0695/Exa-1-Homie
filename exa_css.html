@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen CSS</title>
+    <link rel="stylesheet" href="exa_css.css">
+  </head>
+  <body>
+    <header class="center width">
+      <span>Elige tu forma de pago</span>
+    </header>
+    <section class="container center width">
+      <aside class="radio">
+        <img src="circle.png" alt="">
+        <label for="radio-one">Tarjeta de crédito o débito</label>
+      </aside>
+      <aside class="buttons">
+        <button class="visa" onclick="btnVisa()"><img src="visa.png"></button>
+        <button class="master" onclick="btnMaster()"><img src="mastercard.png"></button>
+        <button class="amex" onclick="btnAmex()"><img src="amex.png"></button>
+      </aside>
+      <aside class="form">
+        <aside class="name">
+          <label for="">Nombre completo</label>
+          <input type="text" name="name" placeholder="Nombre">
+        </aside>
+        <aside class="vigencia">
+          <aside>
+            <label for="vigencia">Vigencia</label>
+            <input type="text" name="vigencia" placeholder="mm/aa">
+          </aside>
+          <aside>
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" placeholder="____">
+          </aside>
+        </aside>
+        <aside class="card-number">
+          <label for="card-number">Numero de tarjeta</label>
+          <input type="text" name="card-number" placeholder="_________________">
+        </aside>
+        <aside class="zip-code">
+          <label for="zipcode">Codigo postal</label>
+          <input type="text" name="zipcode" placeholder="_______">
+        </aside>
+        <aside class="change-container">
+          <aside class="master-code">
+            <label for="mastercode">Tienes un codigo de Matercard? Escribelo aqui</label>
+            <input type="text" name="mastercode" placeholder="">
+            <p>
+              <span>Utiliza el codigo HOMIEMC al pagar con</span>
+              <span>tu tarjeta MASTERCARD y recibe</span>
+              <span>beneficios exclusivos</span>
+            </p>
+            <aside class="btn-master">
+              <button>Pagar</button>
+              <span>* Se cobrará el 2.65% por comisión</span>
+            </aside>
+          </aside>
+          <aside class="save-card">
+            <input type="checkbox" id="acepto" name="acepto" checked>
+            <label for="acepto"><span></span>&nbsp;&nbsp;&nbsp;&nbsp;Guardar tarjeta en cuenta</label>
+          </aside>
+          <aside class="btn-visa">
+            <button>Pagar</button>
+            <span>* Se cobrará el 2.65% por comisión</span>
+          </aside>
+          <aside class="btn-amex">
+              <button>Pagar</button>
+              <span>* Se cobrará el 3.65% por comisión</span>
+            </aside>
+        </aside>
+      </aside>
+    </section>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="exa_css.js"></script>
+  </body>
+</html>

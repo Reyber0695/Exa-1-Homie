@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: auto;
+}
+
+.width {
+  max-width: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+  header span {
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    color: rgb(74, 74, 74);
+  }  
+
+.container  {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+
+  .container .radio {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+    .container .radio img {
+      margin-left: 20px;
+    }
+
+    .container .radio label {
+      font-family: 'Open sans', sans-serif;
+      color: rgb(74, 74, 74);
+      font-size: 16px;
+    }
+  
+  .container .buttons {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+    .container .buttons button {
+      border: 2px rgb(204, 204, 204) solid;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .container .buttons button:focus {
+      outline: 2px rgb(141, 122, 255) solid;
+    }
+
+    .container .buttons .visa {
+      width: 80px;
+      height: 30px;
+    }
+
+      .container .buttons .visa img {
+        width: 100%;
+        height: 100%;
+      }
+
+    .container .buttons .master {
+       width: 80px;
+       height: 60px;
+    }
+
+      .container .buttons .master img {
+        width: 100%;
+        height: 100%;
+      }
+
+    .container .buttons .amex {
+      width: 80px;
+      height: 50px;
+    }
+
+      .container .buttons .amex img {
+        width: 100%;
+        height: 100%;
+      }
+
+  .container .form {
+    width: 100%;
+    background-color: rgb(249, 249, 249);;
+  }
+
+    .container .form .name{
+      width: 100%;
+      height: 67px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-left: 10px;
+    }
+
+      .container .form .name label {
+        font-family: 'Open sans', sans-serif;
+        font-size: 14px;
+      }
+
+      .container .form .name input {
+        padding: 8px;
+        width: 97%;
+      }
+
+    .container .form .vigencia {
+      width: 100%;
+      height: 67px;
+      display: flex;
+    }
+
+      .container .form .vigencia aside {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-left: 10px;
+      }
+
+        .container .form .vigencia aside label {
+          font-family: 'Open sans', sans-serif;
+          font-size: 14px;
+        }
+
+        .container .form .vigencia aside input {
+          padding: 8px;
+          width: 94%;
+        }
+
+    .container .form .card-number {
+      width: 100%;
+      height: 67px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-left: 10px;
+    }
+
+      .container .form .card-number label {
+        font-family: 'Open sans', sans-serif;
+        font-size: 14px;
+      }
+
+      .container .form .card-number input {
+        padding: 8px;
+        width: 97%;
+      }
+
+    .container .form .zip-code {
+      width: 100%;
+      height: 67px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-left: 10px;
+    }
+  
+      .container .form .zip-code label {
+        font-family: 'Open sans', sans-serif;
+        font-size: 14px;
+      }
+  
+      .container .form .zip-code input {
+        padding: 8px;
+        width: 37%;
+      }
+
+    .container .form .change-container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+      
+      .container .form .change-container .master-code {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+        .container .form .change-container .master-code input {
+          width: 94%;
+          padding: 8px;
+          margin-top: 10px;
+        }
+
+        .container .form .change-container .master-code label {
+          font-family: 'Open sans', sans-serif;
+          font-size: 14px;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+
+        .container .form .change-container .master-code p {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+          font-family: 'Open sans', sans-serif;
+          color:rgb(155, 155, 155);
+          font-weight: bold;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          
+        }
+
+        .container .form .change-container .master-code .btn-master{
+          width: 100%;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .container .form .change-container .master-code .btn-master button {
+          width: 95%;
+          height: 35px;
+          background: rgb(141, 122, 255);
+          border: 0;
+          color: #fff;
+          font-family: 'Open sans', sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        } 
+
+        .container .form .change-container .master-code .btn-master span {
+          color: rgb(155, 155, 155);
+          font-family: 'Open sans', sans-serif;
+          font-size: 14px;
+        }
+
+      .container .form .change-container .save-card {
+        width: 95%;
+        height: 35px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+        .container .form .change-container .save-card input[type="checkbox"] {
+          display: none;
+        }
+
+        .container .form .change-container .save-card label {
+          font-family: 'Open sans', sans-serif;
+          font-size: 16px;
+        }
+
+        .container .form .change-container .save-card input[type="checkbox"] + label span {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          margin: -1px 4px 0 0;
+          vertical-align: middle;
+          background: url('unchecked.png');
+          background-size: cover;
+          cursor: pointer;
+          border: 2px rgb(141, 122, 255) solid;
+
+        }
+        .container .form .change-container .save-card input[type="checkbox"]:checked + label span {
+          background: url('checked.png');
+          background-size: cover;
+          background-color: rgb(141, 122, 255);
+        }
+
+      .container .form .change-container .btn-visa {
+        width: 100%;
+        height: 100px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center
+      }
+
+        .container .form .change-container .btn-visa button {
+          width: 95%;
+          height: 35px;
+          background: rgb(141, 122, 255);
+          border: 0;
+          color: #fff;
+          font-family: 'Open sans', sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .container .form .change-container .btn-visa span {
+          color: rgb(155, 155, 155);
+          font-family: 'Open sans', sans-serif;
+          font-size: 14px;
+        }
+
+        .container .form .change-container .btn-amex {
+          width: 100%;
+          height: 100px;
+          display: none;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+  
+          .container .form .change-container .btn-amex button {
+            width: 95%;
+            height: 35px;
+            background: rgb(141, 122, 255);
+            border: 0;
+            color: #fff;
+            font-family: 'Open sans', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+          }
+  
+          .container .form .change-container .btn-amex span {
+            color: rgb(155, 155, 155);
+            font-family: 'Open sans', sans-serif;
+            font-size: 14px;
+          }
+
+footer {
+  width: 30px;
+  height: 15px;
+  background-color: #fff;
+}
